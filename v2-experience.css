@@ -47,6 +47,7 @@
 #about .personal-interests{margin-top:30px;padding-top:26px;border-top:1px solid rgba(255,255,255,.1)}
 #about .personal-interests h3{margin:0 0 8px;font-size:20px;color:#eef4ff}
 #about .personal-interests p:last-child{max-width:720px;color:#aebbd2;line-height:1.75}
+#about .personal-interests p:last-child:after{content:"  I’m also very interested in finance and the stock market. I enjoy researching companies, understanding their fundamentals, and following how businesses evolve. I trade and invest in stocks, but what interests me most is how great companies can shape the future—not only financially, but by creating technology, products, and ideas that can make life better for people and humanity.";display:block;margin-top:14px;color:#c4d2e8}
 
 /* Certificates & achievements */
 #certificates .certificates-v2{margin-top:28px;border-top:1px solid rgba(255,255,255,.1)}
