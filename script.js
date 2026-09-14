@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       interests.innerHTML = `
         <p class="eyebrow">BEYOND ENGINEERING</p>
         <h3>When I'm away from the keyboard.</h3>
-        <p>I enjoy watching soccer, going to the gym, taking evening walks, and swimming at the beach. These are simple things I enjoy that help me stay active, reset, and keep a good balance outside of work.</p>`;
+        <p>Outside of work, I enjoy watching soccer, movies—especially action, suspense, and thrillers—going to the gym, taking evening walks, and swimming at the beach. These simple things help me stay active, reset, and keep a good balance outside of work.</p>`;
       about.appendChild(interests);
     }
   }
@@ -72,16 +72,53 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="section-head">
         <p class="eyebrow">CERTIFICATES & ACHIEVEMENTS</p>
         <h2>Things I've completed.</h2>
-        <p class="muted">A place to showcase professional training, certifications, personal achievements, and other milestones.</p>
+        <p class="muted">A few professional learning milestones and personal achievements that are meaningful to me.</p>
       </div>
       <div class="certificates-v2">
-        <article class="certificate-card certificate-placeholder">
-          <div class="certificate-icon">+</div>
-          <div>
-            <p class="certificate-type">ADD YOUR FIRST</p>
-            <h3>Certificate or Achievement</h3>
-            <p>Add certificates, technical training, marathon achievements, tax training, courses, or other milestones here.</p>
-            <p class="certificate-note">Files can be added to the repository later and linked from this section.</p>
+        <article class="certificate-card">
+          <a href="certificates/berkeley-half-marathon.png" target="_blank" rel="noopener" aria-label="View Berkeley Half Marathon certificate">
+            <img class="certificate-thumb" src="certificates/berkeley-half-marathon.png" alt="Berkeley Half Marathon finisher certificate for Nabaraj Kandel, November 17 2024" loading="lazy">
+          </a>
+          <div class="certificate-content">
+            <div class="certificate-icon" aria-hidden="true">🏃</div>
+            <p class="certificate-type">PERSONAL ACHIEVEMENT · 2024</p>
+            <h3>Berkeley Half Marathon</h3>
+            <p>Completed the Berkeley Half Marathon on November 17, 2024 with a finish time of 3:10:25 and an average pace of 14:32 min/mi.</p>
+            <div class="certificate-actions">
+              <a class="btn btn-small" href="certificates/berkeley-half-marathon.png" target="_blank" rel="noopener">View Certificate</a>
+              <a class="btn btn-small" href="https://www.athlinks.com/event/95041/results/Event/1093947/Course/2528352/Bib/3713" target="_blank" rel="noopener">View Race Results</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="certificate-card">
+          <a href="certificates/linkedin-generative-ai.jpeg" target="_blank" rel="noopener" aria-label="View Generative AI certificate">
+            <img class="certificate-thumb" src="certificates/linkedin-generative-ai.jpeg" alt="LinkedIn Learning certificate for What Is Generative AI, completed by Nabaraj Kandel on May 11 2025" loading="lazy">
+          </a>
+          <div class="certificate-content">
+            <div class="certificate-icon" aria-hidden="true">AI</div>
+            <p class="certificate-type">PROFESSIONAL LEARNING · 2025</p>
+            <h3>What Is Generative AI?</h3>
+            <p>Completed through LinkedIn Learning on May 11, 2025. The course covered Generative AI, Artificial Intelligence, and Generative AI tools.</p>
+            <div class="certificate-actions">
+              <a class="btn btn-small" href="certificates/linkedin-generative-ai.jpeg" target="_blank" rel="noopener">View Certificate</a>
+              <a class="btn btn-small" href="https://lnkd.in/g58fKgtV" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="certificate-card">
+          <a href="certificates/hr-block-tax-course.png" target="_blank" rel="noopener" aria-label="View H and R Block tax course certificate">
+            <img class="certificate-thumb" src="certificates/hr-block-tax-course.png" alt="H and R Block California Income Tax Course 2018 certificate for Nabaraj Kandel" loading="lazy">
+          </a>
+          <div class="certificate-content">
+            <div class="certificate-icon" aria-hidden="true">✓</div>
+            <p class="certificate-type">PROFESSIONAL TRAINING · 2018</p>
+            <h3>California Income Tax Course 2018</h3>
+            <p>Completed the H&amp;R Block California Income Tax Course 2018 final test with a score of 96%, including federal and state tax coursework.</p>
+            <div class="certificate-actions">
+              <a class="btn btn-small" href="certificates/hr-block-tax-course.png" target="_blank" rel="noopener">View Certificate</a>
+            </div>
           </div>
         </article>
       </div>`;
