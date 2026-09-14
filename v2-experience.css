@@ -1,0 +1,46 @@
+/* Portfolio V2 — skills + experience refinement */
+#skills .skills-v2{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:1px;
+  margin-top:28px;
+  border-top:1px solid rgba(255,255,255,.1);
+}
+#skills .skill-group{
+  padding:24px 22px;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+#skills .skill-group:nth-child(odd){border-right:1px solid rgba(255,255,255,.1)}
+#skills .skill-group-label{
+  margin:0 0 9px;
+  color:#60a5fa;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:1.7px;
+  text-transform:uppercase;
+}
+#skills .skill-group-title{margin:0 0 7px;font-size:18px;color:#eef4ff}
+#skills .skill-group p{margin:0;color:#aebbd2;line-height:1.7;font-size:14px}
+
+#experience .experience-v2{position:relative;margin-top:30px;padding-left:30px}
+#experience .experience-v2:before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:1px;background:linear-gradient(to bottom,rgba(96,165,250,.7),rgba(255,255,255,.08))}
+#experience .experience-entry{position:relative;padding:0 0 48px}
+#experience .experience-entry:last-child{padding-bottom:0}
+#experience .experience-dot{position:absolute;left:-30px;top:7px;width:11px;height:11px;border-radius:50%;background:#60a5fa;box-shadow:0 0 0 5px rgba(96,165,250,.1)}
+#experience .experience-entry:not(:first-child) .experience-dot{background:#71809a}
+#experience .experience-top{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap}
+#experience .experience-company{margin:0;font-size:25px;letter-spacing:-.4px}
+#experience .experience-role{margin:5px 0 0;color:#9fb0cb;font-size:13px}
+#experience .experience-date{margin:2px 0 0;color:#7383a1;font-size:12px;white-space:nowrap}
+#experience .experience-entry ul{margin:20px 0 0;padding-left:18px;color:#b7c4d9;line-height:1.75;max-width:820px}
+#experience .experience-entry li{padding-left:5px;margin-bottom:8px}
+#experience .experience-stack{margin:18px 0 0;color:#8292ae;font-size:12px;letter-spacing:.15px}
+#experience .experience-stack strong{color:#aebbd2;font-weight:600}
+
+@media(max-width:800px){
+  #skills .skills-v2{grid-template-columns:1fr}
+  #skills .skill-group:nth-child(odd){border-right:0}
+  #experience .experience-v2{padding-left:25px}
+  #experience .experience-dot{left:-25px}
+  #experience .experience-company{font-size:22px}
+}
