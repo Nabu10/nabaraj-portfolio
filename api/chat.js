@@ -1,8 +1,24 @@
 export default async function handler(req, res) {
-  const ALLOWED_ORIGINS = new Set(["https://www.nabukan.com", "https://nabukan.com"]);
+  const ALLOWED_ORIGINS = new Set([
+    "https://www.nabukan.com",
+    "https://nabukan.com",
+    "https://nabaraj-portfolio-ruby.vercel.app",
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "http://localhost:5500",
+    "http://localhost:63342",
+    "http://localhost:8080",
+    "http://127.0.0.1:3000",
+    "http://127.0.0.1:5173",
+    "http://127.0.0.1:5500",
+    "http://127.0.0.1:63342",
+    "http://127.0.0.1:8080"
+  ]);
   const origin = req.headers.origin;
 
-  if (origin && ALLOWED_ORIGINS.has(origin)) res.setHeader("Access-Control-Allow-Origin", origin);
+  if (origin && ALLOWED_ORIGINS.has(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  }
   res.setHeader("Vary", "Origin");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -36,7 +52,7 @@ VERIFIED FACTS
 - Frontend: HTML, CSS, JavaScript, Angular, React.
 - Data/quality: PostgreSQL, MongoDB, Redis, JUnit, Mockito, SonarQube, ELK, Splunk, Prometheus.
 - AI: LLMs, AI agents, OpenAI, Claude, Grok, AI-assisted development.
-- Wells Fargo: API proxy migration, OAuth 2.0, OpenAPI 3.0, SIT/UAT, Apigee, Splunk, Kafka requirements, PCF-to-OpenShift migration, Autosys workflows.
+- Wells Fargo: API proxy migration, OAuth 2.0 scope validation, OpenAPI 3.0, SIT/UAT, Apigee, Splunk, Kafka requirements, PCF-to-OpenShift migration, Autosys workflows.
 - Visa: Spring Boot microservices, REST/GraphQL services, Kafka/RabbitMQ, CI/CD, Docker/Kubernetes, testing, ELK and Prometheus.
 - Ondas Networks: Java/Spring Boot, Spring WebFlux, OAuth2/SAML, logging and monitoring.
 - TradingWise: Nabaraj-built live stock-analysis tool for position scenarios, target gains, cost recovery and scaling strategies. GitHub: Nabu10/TradingWise. Live: tradingwise.onrender.com/tools/stocks.html.
