@@ -18,8 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .certificate-category-grid{display:grid;gap:16px}
     .certificate-category-grid .certificate-card{margin:0}
 
-    .resume-links{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:10px}
-    .resume-view-link{display:inline-flex;align-items:center;gap:6px;color:#9fc1ff;text-decoration:none;font-size:13px;font-weight:500}
+    .resume-view-link{display:inline-flex;align-items:center;gap:6px;color:#9fc1ff;text-decoration:none;font-size:13px;font-weight:500;margin-left:2px}
     .resume-view-link:hover{text-decoration:underline}
 
     .ai-showcase{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);gap:44px;align-items:center}
@@ -43,6 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
   `;
   document.head.appendChild(style);
 
+  function activateIfVisible(section) {
+    if (section && section.getBoundingClientRect().top < window.innerHeight - 120) section.classList.add("active");
+  }
+
   function insertNumbersSection() {
     if (document.getElementById("numbers")) return;
     const about = document.getElementById("about");
@@ -63,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="number-item"><div class="number-value">25+</div><div class="number-label">Technologies</div><div class="number-note">Across backend, cloud, data, frontend & AI</div></div>
       </div>`;
     about.parentNode.insertBefore(section, about.nextSibling);
+    activateIfVisible(section);
   }
 
   function organizeCertificates() {
@@ -94,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
     addCategory("Achievements", achievements);
     addCategory("Other Learning", other);
     section.dataset.organized = "true";
+    activateIfVisible(section);
   }
 
   function addResumeViewLinks() {
@@ -146,10 +151,11 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       </div>`;
     contact.parentNode.insertBefore(section, contact);
+    activateIfVisible(section);
 
     const openChat = () => {
-      const chatToggle = document.getElementById("chat-toggle");
-      if (chatToggle) chatToggle.click();
+      const chatContainer = document.getElementById("chat-container");
+      if (chatContainer) chatContainer.style.display = "flex";
       const input = document.getElementById("user-input");
       if (input) input.focus();
     };
@@ -177,7 +183,6 @@ document.addEventListener("DOMContentLoaded", function () {
     organizeCertificates();
     addResumeViewLinks();
     insertAIShowcase();
-    if (typeof window.revealOnScroll === "function") window.revealOnScroll();
   }
 
   runEnhancements();
