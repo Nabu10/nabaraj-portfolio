@@ -51,11 +51,16 @@
 
 /* Certificates & achievements */
 #certificates .certificates-v2{margin-top:28px;border-top:1px solid rgba(255,255,255,.1)}
-#certificates .certificate-card{display:flex;gap:22px;align-items:flex-start;padding:28px 22px;border-bottom:1px solid rgba(255,255,255,.1)}
-#certificates .certificate-icon{width:42px;height:42px;display:grid;place-items:center;border:1px solid rgba(96,165,250,.35);border-radius:50%;color:#60a5fa;font-size:24px;flex:none}
+#certificates .certificate-card{display:grid;grid-template-columns:220px minmax(0,1fr);gap:24px;align-items:center;padding:28px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+#certificates .certificate-thumb{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border:1px solid rgba(255,255,255,.12);border-radius:10px;background:#0b1220;box-shadow:0 12px 30px rgba(0,0,0,.18);transition:transform .2s ease,border-color .2s ease}
+#certificates .certificate-thumb:hover{transform:translateY(-2px);border-color:rgba(96,165,250,.5)}
+#certificates .certificate-content{min-width:0}
+#certificates .certificate-icon{width:42px;height:42px;display:grid;place-items:center;border:1px solid rgba(96,165,250,.35);border-radius:50%;color:#60a5fa;font-size:18px;flex:none;margin-bottom:14px}
 #certificates .certificate-type{margin:0 0 8px;color:#60a5fa;font-size:11px;font-weight:700;letter-spacing:1.7px;text-transform:uppercase}
 #certificates .certificate-card h3{margin:0 0 7px;font-size:20px;color:#eef4ff}
 #certificates .certificate-card p:not(.certificate-type){margin:0;color:#aebbd2;line-height:1.7;font-size:14px}
 #certificates .certificate-note{margin-top:9px!important;color:#74839c!important;font-size:12px!important}
+#certificates .certificate-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}
+#certificates .certificate-actions .btn{font-size:12px;padding:9px 13px}
 
-@media(max-width:800px){#skills .skills-v2{grid-template-columns:1fr}#skills .skill-group:nth-child(odd){border-right:0}#experience .experience-v2{padding-left:25px}#experience .experience-dot{left:-25px}#experience .experience-company{font-size:22px}#projects .projects-v2{grid-template-columns:1fr;gap:26px}#projects .project-feature{padding:25px}#projects .project-feature h3{font-size:29px}#projects .project-side{padding:0;border-left:0;border-top:1px solid rgba(255,255,255,.1);padding-top:24px}#contact .contact-box{align-items:stretch}#contact .contact-box .btn{width:100%;justify-content:center}#certificates .certificate-card{padding:24px 0;gap:16px}}
+@media(max-width:800px){#skills .skills-v2{grid-template-columns:1fr}#skills .skill-group:nth-child(odd){border-right:0}#experience .experience-v2{padding-left:25px}#experience .experience-dot{left:-25px}#experience .experience-company{font-size:22px}#projects .projects-v2{grid-template-columns:1fr;gap:26px}#projects .project-feature{padding:25px}#projects .project-feature h3{font-size:29px}#projects .project-side{padding:0;border-left:0;border-top:1px solid rgba(255,255,255,.1);padding-top:24px}#contact .contact-box{align-items:stretch}#contact .contact-box .btn{width:100%;justify-content:center}#certificates .certificate-card{grid-template-columns:1fr;gap:16px;padding:24px 0}#certificates .certificate-thumb{max-width:520px}#certificates .certificate-actions .btn{width:auto}}
