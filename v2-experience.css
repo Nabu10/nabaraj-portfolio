@@ -1,27 +1,10 @@
 /* Portfolio V2 — skills + experience refinement */
-#skills .skills-v2{
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:1px;
-  margin-top:28px;
-  border-top:1px solid rgba(255,255,255,.1);
-}
-#skills .skill-group{
-  padding:24px 22px;
-  border-bottom:1px solid rgba(255,255,255,.1);
-}
+#skills .skills-v2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;margin-top:28px;border-top:1px solid rgba(255,255,255,.1)}
+#skills .skill-group{padding:24px 22px;border-bottom:1px solid rgba(255,255,255,.1)}
 #skills .skill-group:nth-child(odd){border-right:1px solid rgba(255,255,255,.1)}
-#skills .skill-group-label{
-  margin:0 0 9px;
-  color:#60a5fa;
-  font-size:11px;
-  font-weight:700;
-  letter-spacing:1.7px;
-  text-transform:uppercase;
-}
+#skills .skill-group-label{margin:0 0 9px;color:#60a5fa;font-size:11px;font-weight:700;letter-spacing:1.7px;text-transform:uppercase}
 #skills .skill-group-title{margin:0 0 7px;font-size:18px;color:#eef4ff}
 #skills .skill-group p{margin:0;color:#aebbd2;line-height:1.7;font-size:14px}
-
 #experience .experience-v2{position:relative;margin-top:30px;padding-left:30px}
 #experience .experience-v2:before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:1px;background:linear-gradient(to bottom,rgba(96,165,250,.7),rgba(255,255,255,.08))}
 #experience .experience-entry{position:relative;padding:0 0 48px}
@@ -36,11 +19,21 @@
 #experience .experience-entry li{padding-left:5px;margin-bottom:8px}
 #experience .experience-stack{margin:18px 0 0;color:#8292ae;font-size:12px;letter-spacing:.15px}
 #experience .experience-stack strong{color:#aebbd2;font-weight:600}
-
-@media(max-width:800px){
-  #skills .skills-v2{grid-template-columns:1fr}
-  #skills .skill-group:nth-child(odd){border-right:0}
-  #experience .experience-v2{padding-left:25px}
-  #experience .experience-dot{left:-25px}
-  #experience .experience-company{font-size:22px}
-}
+#projects .section-kicker{margin-bottom:9px}
+#projects>h2{margin-bottom:24px}
+#projects .projects-v2{align-items:stretch}
+#projects .project-feature{min-height:0;padding:32px}
+#projects .project-feature h3{font-size:34px;margin-top:30px}
+#projects .project-feature p{max-width:620px}
+#projects .project-meta span{background:transparent}
+#projects .project-actions .btn{transition:transform .2s ease,border-color .2s ease,background .2s ease}
+#projects .project-actions .btn:hover{transform:translateY(-2px)}
+#projects .project-side{border-radius:0;background:transparent;padding:30px 4px 30px 28px;border:0;border-left:1px solid rgba(255,255,255,.1)}
+#projects .project-side .section-kicker{margin-bottom:12px}
+#projects .project-small-link{display:inline-block}
+#contact{text-align:left}
+#contact>h2{font-size:clamp(30px,4vw,42px);letter-spacing:-.8px;margin-bottom:10px}
+#contact>p.muted{max-width:680px;line-height:1.75}
+#contact .contact-box{display:flex;align-items:center;justify-content:flex-start;gap:10px;flex-wrap:wrap;margin-top:22px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1)}
+#contact .contact-box .btn{min-width:125px}
+@media(max-width:800px){#skills .skills-v2{grid-template-columns:1fr}#skills .skill-group:nth-child(odd){border-right:0}#experience .experience-v2{padding-left:25px}#experience .experience-dot{left:-25px}#experience .experience-company{font-size:22px}#projects .projects-v2{grid-template-columns:1fr;gap:26px}#projects .project-feature{padding:25px}#projects .project-feature h3{font-size:29px}#projects .project-side{padding:0;border-left:0;border-top:1px solid rgba(255,255,255,.1);padding-top:24px}#contact .contact-box{align-items:stretch}#contact .contact-box .btn{width:100%;justify-content:center}}
