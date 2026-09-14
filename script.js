@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="section-head">
         <p class="eyebrow">WHAT I WORK WITH</p>
         <h2>Skills built for real-world systems.</h2>
-        <p class="muted">A practical stack for building, shipping, and operating backend systems.</p>
+        <p class="muted">A practical stack across backend engineering, frontend development, cloud delivery, data, and AI.</p>
       </div>
       <div class="skills-v2">
         <div class="skill-group">
@@ -36,9 +36,19 @@ document.addEventListener("DOMContentLoaded", function () {
           <p>AWS, Docker, Kubernetes, Jenkins, GitHub Actions, OpenShift, CI/CD, and production deployment workflows.</p>
         </div>
         <div class="skill-group">
-          <p class="skill-group-label">04 / Data & Quality</p>
+          <p class="skill-group-label">04 / Frontend</p>
+          <h3 class="skill-group-title">Frontend Development</h3>
+          <p>HTML, CSS, JavaScript, Angular, and React for building responsive interfaces and connecting users to backend services.</p>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">05 / Data & Quality</p>
           <h3 class="skill-group-title">Data & Quality</h3>
           <p>PostgreSQL, MongoDB, Redis, JUnit, Mockito, SonarQube, ELK, Splunk, and Prometheus.</p>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">06 / AI</p>
+          <h3 class="skill-group-title">AI & Emerging Technology</h3>
+          <p>OpenAI, Claude, Grok, LLMs, AI agents, prompt-driven development, and experimenting with AI-assisted products.</p>
         </div>
       </div>`;
   }
@@ -113,13 +123,27 @@ document.addEventListener("DOMContentLoaded", function () {
   renderV2Experience();
 
   /* =========================
+     About additions
+  ========================= */
+
+  const aboutCopy = document.querySelector(".about-copy");
+  if (aboutCopy && !aboutCopy.dataset.v2Extended) {
+    aboutCopy.dataset.v2Extended = "true";
+    const p = document.createElement("p");
+    p.textContent = "I also have hands-on frontend experience with HTML, CSS, JavaScript, Angular, and React, and I enjoy seeing how backend systems become complete products. I’m an AI enthusiast as well, exploring LLMs, AI agents, and tools such as OpenAI, Claude, and Grok to build smarter developer and financial tools.";
+    aboutCopy.appendChild(p);
+  }
+
+  /* =========================
      Typing Effect
   ========================= */
 
   const text = [
     "Java • Spring Boot • Kafka",
     "Cloud • Microservices • AWS",
-    "Enterprise Backend Engineer"
+    "Frontend • JavaScript • Angular",
+    "AI • LLMs • AI Agents",
+    "Enterprise Software Engineer"
   ];
 
   let i = 0;
