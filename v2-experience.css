@@ -36,4 +36,12 @@
 #contact>p.muted{max-width:680px;line-height:1.75}
 #contact .contact-box{display:flex;align-items:center;justify-content:flex-start;gap:10px;flex-wrap:wrap;margin-top:22px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1)}
 #contact .contact-box .btn{min-width:125px}
+
+/* AI focus */
+#skills .skill-group:nth-child(4){position:relative}
+#skills .skill-group:nth-child(4) .skill-group-title{margin-bottom:10px}
+#skills .skill-group:nth-child(4) p:last-child:after{content:"  •  AI & LLMs • AI Agents • OpenAI • Claude • Grok";color:#b9c6dc}
+#skills .skill-group:nth-child(4) .skill-group-label:after{content:" + AI";color:#9fc1ff}
+#about .about-copy:after{content:" I’m also an AI enthusiast, actively exploring LLMs, AI agents, and tools such as OpenAI, Claude, and Grok to understand how AI can augment software engineering and turn ideas into useful products.";display:block;margin-top:16px;color:#c4d2e8}
+
 @media(max-width:800px){#skills .skills-v2{grid-template-columns:1fr}#skills .skill-group:nth-child(odd){border-right:0}#experience .experience-v2{padding-left:25px}#experience .experience-dot{left:-25px}#experience .experience-company{font-size:22px}#projects .projects-v2{grid-template-columns:1fr;gap:26px}#projects .project-feature{padding:25px}#projects .project-feature h3{font-size:29px}#projects .project-side{padding:0;border-left:0;border-top:1px solid rgba(255,255,255,.1);padding-top:24px}#contact .contact-box{align-items:stretch}#contact .contact-box .btn{width:100%;justify-content:center}}
