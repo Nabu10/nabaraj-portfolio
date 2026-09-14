@@ -1,6 +1,118 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   /* =========================
+     V2 Skills + Experience
+  ========================= */
+
+  const v2Styles = document.createElement("link");
+  v2Styles.rel = "stylesheet";
+  v2Styles.href = "v2-experience.css";
+  document.head.appendChild(v2Styles);
+
+  function renderV2Skills() {
+    const section = document.getElementById("skills");
+    if (!section || section.dataset.v2Rendered === "true") return;
+    section.dataset.v2Rendered = "true";
+    section.innerHTML = `
+      <div class="section-head">
+        <p class="eyebrow">WHAT I WORK WITH</p>
+        <h2>Skills built for real-world systems.</h2>
+        <p class="muted">A practical stack for building, shipping, and operating backend systems.</p>
+      </div>
+      <div class="skills-v2">
+        <div class="skill-group">
+          <p class="skill-group-label">01 / Backend</p>
+          <h3 class="skill-group-title">Backend Engineering</h3>
+          <p>Java, Spring Boot, Spring Cloud, REST APIs, GraphQL, and WebFlux for reliable service development.</p>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">02 / Distributed Systems</p>
+          <h3 class="skill-group-title">Distributed Systems</h3>
+          <p>Microservices, Kafka, RabbitMQ, event-driven workflows, API integration, and service-to-service communication.</p>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">03 / Cloud & Delivery</p>
+          <h3 class="skill-group-title">Cloud & Delivery</h3>
+          <p>AWS, Docker, Kubernetes, Jenkins, GitHub Actions, OpenShift, CI/CD, and production deployment workflows.</p>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">04 / Data & Quality</p>
+          <h3 class="skill-group-title">Data & Quality</h3>
+          <p>PostgreSQL, MongoDB, Redis, JUnit, Mockito, SonarQube, ELK, Splunk, and Prometheus.</p>
+        </div>
+      </div>`;
+  }
+
+  function renderV2Experience() {
+    const section = document.getElementById("experience");
+    if (!section || section.dataset.v2Rendered === "true") return;
+    section.dataset.v2Rendered = "true";
+    section.innerHTML = `
+      <div class="section-head">
+        <p class="eyebrow">CAREER</p>
+        <h2>Where I've worked.</h2>
+        <p class="muted">Senior engineering roles across financial services, payments, and wireless technology.</p>
+      </div>
+      <div class="experience-v2">
+        <article class="experience-entry">
+          <span class="experience-dot" aria-hidden="true"></span>
+          <div class="experience-top">
+            <div>
+              <h3 class="experience-company">Wells Fargo</h3>
+              <p class="experience-role">Senior Software Developer</p>
+            </div>
+            <p class="experience-date">Jul 2025 – Present</p>
+          </div>
+          <ul>
+            <li>Worked on API proxy migration, including OAuth 2.0 scope validation and OpenAPI 3.0 specifications.</li>
+            <li>Supported SIT and UAT validation using Postman, Splunk, and Apigee Trace to troubleshoot API behavior.</li>
+            <li>Created functional solution documentation covering routing, OAuth, and Kafka integration requirements.</li>
+            <li>Contributed to PCF-to-OpenShift migration and Autosys batch-job workflows.</li>
+          </ul>
+          <p class="experience-stack"><strong>Stack:</strong> Java · Spring Boot · APIs · OAuth 2.0 · Kafka · OpenAPI · Apigee · OpenShift · Autosys</p>
+        </article>
+
+        <article class="experience-entry">
+          <span class="experience-dot" aria-hidden="true"></span>
+          <div class="experience-top">
+            <div>
+              <h3 class="experience-company">Visa</h3>
+              <p class="experience-role">Senior Software Engineer</p>
+            </div>
+            <p class="experience-date">Feb 2022 – Jan 2025</p>
+          </div>
+          <ul>
+            <li>Built Spring Boot microservices consumed by React frontends, exposing REST and GraphQL APIs for enterprise payment workflows.</li>
+            <li>Developed event-driven integrations using Kafka and RabbitMQ across distributed services.</li>
+            <li>Worked with Jenkins, GitHub Actions, Docker, and Kubernetes to build and deliver production services.</li>
+            <li>Improved service reliability through testing, performance work, and observability with ELK and Prometheus.</li>
+          </ul>
+          <p class="experience-stack"><strong>Stack:</strong> Java · Spring Boot · Microservices · REST · GraphQL · Kafka · RabbitMQ · Docker · Kubernetes · ELK · Prometheus</p>
+        </article>
+
+        <article class="experience-entry">
+          <span class="experience-dot" aria-hidden="true"></span>
+          <div class="experience-top">
+            <div>
+              <h3 class="experience-company">Ondas Networks</h3>
+              <p class="experience-role">Java Engineer</p>
+            </div>
+            <p class="experience-date">Feb 2021 – Feb 2022</p>
+          </div>
+          <ul>
+            <li>Developed Java and Spring Boot services for high-availability deployments.</li>
+            <li>Worked with Spring WebFlux and reactive service patterns for network-oriented applications.</li>
+            <li>Implemented and supported OAuth2/SAML security integrations plus logging and monitoring.</li>
+          </ul>
+          <p class="experience-stack"><strong>Stack:</strong> Java · Spring Boot · Spring WebFlux · OAuth2 · SAML · Logging · Monitoring</p>
+        </article>
+      </div>`;
+  }
+
+  renderV2Skills();
+  renderV2Experience();
+
+  /* =========================
      Typing Effect
   ========================= */
 
@@ -42,38 +154,29 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   type();
 
+  /* =========================
+     Show Phone (click-to-reveal)
+  ========================= */
 
+  const showPhoneBtn = document.getElementById("showPhoneBtn");
+  const phoneLink = document.getElementById("phoneLink");
+  const PHONE_DISPLAY = "(510) 600-3498";
+  const PHONE_TEL = "+15106003498";
 
-/* =========================
-   Show Phone (click-to-reveal)
-========================= */
+  if (showPhoneBtn && phoneLink) {
+    showPhoneBtn.addEventListener("click", () => {
+      phoneLink.href = `tel:${PHONE_TEL}`;
+      phoneLink.textContent = PHONE_DISPLAY;
+      phoneLink.style.display = "inline-flex";
+      showPhoneBtn.textContent = "Hide Phone";
 
-const showPhoneBtn = document.getElementById("showPhoneBtn");
-const phoneLink = document.getElementById("phoneLink");
-
-// ✅ set the phone number here
-const PHONE_DISPLAY = "(510) 600-3498";
-const PHONE_TEL = "+15106003498";
-
-if (showPhoneBtn && phoneLink) {
-  showPhoneBtn.addEventListener("click", () => {
-    // reveal clickable tel link
-    phoneLink.href = `tel:${PHONE_TEL}`;
-    phoneLink.textContent = PHONE_DISPLAY;
-    phoneLink.style.display = "inline-flex";
-
-    // change button to "Hide Phone"
-    showPhoneBtn.textContent = "Hide Phone";
-
-    // toggle hide/show
-    showPhoneBtn.onclick = () => {
-      const isHidden = phoneLink.style.display === "none";
-      phoneLink.style.display = isHidden ? "inline-flex" : "none";
-      showPhoneBtn.textContent = isHidden ? "Hide Phone" : "Show Phone";
-    };
-  });
-}
-
+      showPhoneBtn.onclick = () => {
+        const isHidden = phoneLink.style.display === "none";
+        phoneLink.style.display = isHidden ? "inline-flex" : "none";
+        showPhoneBtn.textContent = isHidden ? "Hide Phone" : "Show Phone";
+      };
+    });
+  }
 
   /* =========================
      Mobile Nav Toggle
@@ -94,24 +197,20 @@ if (showPhoneBtn && phoneLink) {
       setNavOpen(!isOpen);
     });
 
-    // close menu when clicking a link (mobile)
     navLinks.querySelectorAll("a").forEach(a => {
       a.addEventListener("click", () => setNavOpen(false));
     });
 
-    // close if clicking outside
     document.addEventListener("click", (e) => {
       if (!navLinks.classList.contains("open")) return;
       const clickedInside = navLinks.contains(e.target) || navToggle.contains(e.target);
       if (!clickedInside) setNavOpen(false);
     });
 
-    // close on Escape
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") setNavOpen(false);
     });
   }
-
 
   /* =========================
      Scroll Reveal
@@ -128,7 +227,6 @@ if (showPhoneBtn && phoneLink) {
   window.addEventListener("scroll", revealOnScroll);
   revealOnScroll();
 
-
   /* =========================
      Particles
   ========================= */
@@ -144,15 +242,12 @@ if (showPhoneBtn && phoneLink) {
     });
   }
 
-
   /* =========================
      GitHub Projects (optional)
-     - NOTE: Your current HTML does NOT include #github-projects.
-     - This will run only if you add <div id="github-projects"></div>
   ========================= */
 
   const githubContainer = document.getElementById("github-projects");
-  const GITHUB_USER = "nabarajkandel"; // update if different
+  const GITHUB_USER = "nabarajkandel";
 
   if (githubContainer) {
     fetch(`https://api.github.com/users/${GITHUB_USER}/repos?sort=updated&per_page=6`)
@@ -184,15 +279,12 @@ if (showPhoneBtn && phoneLink) {
       });
   }
 
-
   /* =========================
      Copy Email Button
   ========================= */
 
   const copyBtn = document.getElementById("copyEmailBtn");
   const copyStatus = document.getElementById("copyStatus");
-
-  // ✅ Put the correct email here (double-check spelling before publishing)
   const EMAIL = "nabarajkandel73@gmail.com";
 
   if (copyBtn) {
@@ -201,7 +293,6 @@ if (showPhoneBtn && phoneLink) {
         await navigator.clipboard.writeText(EMAIL);
         if (copyStatus) copyStatus.textContent = "Email copied to clipboard ✅";
       } catch (e) {
-        // fallback if clipboard blocked
         const temp = document.createElement("input");
         temp.value = EMAIL;
         document.body.appendChild(temp);
@@ -217,14 +308,12 @@ if (showPhoneBtn && phoneLink) {
     });
   }
 
-
   /* =========================
      Footer year
   ========================= */
 
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
-
 
   /* =========================
      AI Chat System (Vercel API)
@@ -237,7 +326,6 @@ if (showPhoneBtn && phoneLink) {
   const chatClose = document.getElementById("chat-close");
   const chatSendBtn = document.getElementById("chat-send");
   const chatStatus = document.getElementById("chat-status");
-
 
   function addMessage(role, text) {
     if (!chatMessages) return null;
@@ -269,17 +357,13 @@ if (showPhoneBtn && phoneLink) {
     if (next && userInput) userInput.focus();
   }
 
-  // auto open once after page loads (remove later if you want)
-  // Auto-open once after page loads (remove later if you want)
-
   if (!localStorage.getItem("chat_auto_opened")) {
-  setTimeout(() => toggleChat(true), 1200);
-  localStorage.setItem("chat_auto_opened", "1");
-}
+    setTimeout(() => toggleChat(true), 1200);
+    localStorage.setItem("chat_auto_opened", "1");
+  }
 
   if (chatToggle) {
     chatToggle.onclick = () => toggleChat();
-    // keyboard accessibility
     chatToggle.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") toggleChat();
     });
@@ -287,57 +371,50 @@ if (showPhoneBtn && phoneLink) {
   if (chatClose) chatClose.onclick = () => toggleChat(false);
   if (chatSendBtn) chatSendBtn.onclick = () => window.sendMessage();
 
-  // close chat on Escape
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") toggleChat(false);
   });
 
-  // Welcome message
   setTimeout(() => {
     if (chatMessages) addMessage("ai", "Hi! I’m Nabaraj’s assistant. Ask me about his experience, tech stack, or projects.");
   }, 700);
 
- window.sendMessage = async function () {
-  const message = userInput?.value.trim();
-  if (!message) return;
+  window.sendMessage = async function () {
+    const message = userInput?.value.trim();
+    if (!message) return;
 
-  addMessage("user", message);
-  userInput.value = "";
+    addMessage("user", message);
+    userInput.value = "";
 
-  const aiDiv = document.createElement("div");
-  aiDiv.className = "msg ai";
-  aiDiv.innerHTML = `<strong>AI:</strong> ...`;
-  chatMessages.appendChild(aiDiv);
-  chatMessages.scrollTop = chatMessages.scrollHeight;
+    const aiDiv = document.createElement("div");
+    aiDiv.className = "msg ai";
+    aiDiv.innerHTML = `<strong>AI:</strong> ...`;
+    chatMessages.appendChild(aiDiv);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
 
-  // ✅ show status while calling API
-  if (chatStatus) chatStatus.textContent = "Typing…";
+    if (chatStatus) chatStatus.textContent = "Typing…";
 
-  try {
-    const response = await fetch("https://nabaraj-portfolio-ruby.vercel.app/api/chat", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message })
-    });
+    try {
+      const response = await fetch("https://nabaraj-portfolio-ruby.vercel.app/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message })
+      });
 
-    if (!response.ok) throw new Error("Server error");
+      if (!response.ok) throw new Error("Server error");
 
-    const data = await response.json();
-    const reply = data?.reply || "I didn’t get a reply from the server.";
+      const data = await response.json();
+      const reply = data?.reply || "I didn’t get a reply from the server.";
 
-    // ✅ back to online once we got reply
-    if (chatStatus) chatStatus.textContent = "Online";
+      if (chatStatus) chatStatus.textContent = "Online";
+      typeInto(aiDiv, reply, 14);
 
-    typeInto(aiDiv, reply, 14);
+    } catch (error) {
+      if (chatStatus) chatStatus.textContent = "Offline";
+      aiDiv.innerHTML = `<strong>AI:</strong> <span style="color:#ff6b6b;">Error connecting to AI.</span>`;
+    }
+  };
 
-  } catch (error) {
-    if (chatStatus) chatStatus.textContent = "Offline";
-    aiDiv.innerHTML = `<strong>AI:</strong> <span style="color:#ff6b6b;">Error connecting to AI.</span>`;
-  }
-};
-
-
-  // Enter to send
   if (userInput) {
     userInput.addEventListener("keydown", (e) => {
       if (e.key === "Enter") window.sendMessage();
@@ -345,4 +422,3 @@ if (showPhoneBtn && phoneLink) {
   }
 
 });
-
