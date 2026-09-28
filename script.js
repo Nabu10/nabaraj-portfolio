@@ -699,12 +699,13 @@ document.addEventListener("DOMContentLoaded", function () {
       navLinks &&
       !navLinks.querySelector('a[href="#certificates"]')
     ) {
-      const link = document.createElement("a");
+      const li = document.createElement("li");
+      li.innerHTML = `<a href="#certificates">Certificates</a>`;
 
-      link.href = "#certificates";
-      link.textContent = "Certificates";
+      const contactLink = navLinks.querySelector('a[href="#contact"]')?.parentElement;
 
-      navLinks.appendChild(link);
+      if (contactLink) contactLink.before(li);
+      else navLinks.appendChild(li);
     }
   }
 
