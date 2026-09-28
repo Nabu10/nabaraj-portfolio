@@ -282,6 +282,235 @@ document.addEventListener("DOMContentLoaded", function () {
         <article class="certificate-card">
 
           <a
+            href="certificates/databricks-generative-ai-fundamentals.png"
+            target="_blank"
+            rel="noopener"
+            aria-label="View Databricks Generative AI Fundamentals certificate"
+          >
+            <img
+              class="certificate-thumb"
+              src="certificates/databricks-generative-ai-fundamentals.png"
+              alt="Databricks Academy Generative AI Fundamentals accreditation certificate for Nabaraj Kandel, issued September 28 2026"
+              loading="lazy"
+            >
+          </a>
+
+          <div class="certificate-content">
+
+            <div class="certificate-icon" aria-hidden="true">⬢</div>
+
+            <p class="certificate-type">
+              PROFESSIONAL LEARNING · 2026
+            </p>
+
+            <h3>Generative AI Fundamentals</h3>
+
+            <p>
+              Earned the Databricks Academy accreditation in
+              Generative AI Fundamentals on September 28, 2026,
+              passing the accreditation assessment with a score of
+              70% or higher. The credential does not expire.
+            </p>
+
+            <div class="certificate-actions">
+
+              <a
+                class="btn btn-small"
+                href="certificates/databricks-generative-ai-fundamentals.png"
+                target="_blank"
+                rel="noopener"
+              >
+                View Certificate
+              </a>
+
+              <a
+                class="btn btn-small"
+                href="https://credentials.databricks.com"
+                target="_blank"
+                rel="noopener"
+              >
+                Verify Credential
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="certificate-card">
+
+          <a
+            href="certificates/anthropic-claude-code-in-action.png"
+            target="_blank"
+            rel="noopener"
+            aria-label="View Claude Code in Action certificate"
+          >
+            <img
+              class="certificate-thumb"
+              src="certificates/anthropic-claude-code-in-action.png"
+              alt="Anthropic Claude Code in Action certificate of completion for Nabaraj Kandel"
+              loading="lazy"
+            >
+          </a>
+
+          <div class="certificate-content">
+
+            <div class="certificate-icon" aria-hidden="true">💻</div>
+
+            <p class="certificate-type">
+              PROFESSIONAL LEARNING · 2026
+            </p>
+
+            <h3>Claude Code in Action</h3>
+
+            <p>
+              Completed the Anthropic Education course
+              Claude Code in Action, including the final
+              course quiz.
+            </p>
+
+            <div class="certificate-actions">
+
+              <a
+                class="btn btn-small"
+                href="certificates/anthropic-claude-code-in-action.png"
+                target="_blank"
+                rel="noopener"
+              >
+                View Certificate
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="certificate-card">
+
+          <a
+            href="certificates/anthropic-intro-to-subagents.png"
+            target="_blank"
+            rel="noopener"
+            aria-label="View Introduction to Subagents certificate"
+          >
+            <img
+              class="certificate-thumb"
+              src="certificates/anthropic-intro-to-subagents.png"
+              alt="Anthropic Introduction to subagents certificate of completion for Nabaraj Kandel, September 28 2026"
+              loading="lazy"
+            >
+          </a>
+
+          <div class="certificate-content">
+
+            <div class="certificate-icon" aria-hidden="true">🤖</div>
+
+            <p class="certificate-type">
+              PROFESSIONAL LEARNING · 2026
+            </p>
+
+            <h3>Introduction to Subagents</h3>
+
+            <p>
+              Completed the Anthropic Education course
+              Introduction to Subagents on September 28, 2026.
+            </p>
+
+            <div class="certificate-actions">
+
+              <a
+                class="btn btn-small"
+                href="certificates/anthropic-intro-to-subagents.png"
+                target="_blank"
+                rel="noopener"
+              >
+                View Certificate
+              </a>
+
+              <a
+                class="btn btn-small"
+                href="https://verify.skilljar.com/c/z7ve3bbfzdeb"
+                target="_blank"
+                rel="noopener"
+              >
+                Verify
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="certificate-card">
+
+          <a
+            href="certificates/openai-agents-and-workflows.png"
+            target="_blank"
+            rel="noopener"
+            aria-label="View OpenAI Agents and Workflows certificate"
+          >
+            <img
+              class="certificate-thumb"
+              src="certificates/openai-agents-and-workflows.png"
+              alt="OpenAI Academy Agents and Workflows certificate of completion for Nabaraj Kandel, September 28 2026"
+              loading="lazy"
+            >
+          </a>
+
+          <div class="certificate-content">
+
+            <div class="certificate-icon" aria-hidden="true">⚙</div>
+
+            <p class="certificate-type">
+              PROFESSIONAL LEARNING · 2026
+            </p>
+
+            <h3>Agents and Workflows</h3>
+
+            <p>
+              Completed the OpenAI Academy course Agents and
+              Workflows on September 28, 2026 — practice directing
+              agents through structured work: providing context,
+              defining outputs, setting boundaries, reviewing drafts,
+              and improving the workflow.
+            </p>
+
+            <div class="certificate-actions">
+
+              <a
+                class="btn btn-small"
+                href="certificates/openai-agents-and-workflows.png"
+                target="_blank"
+                rel="noopener"
+              >
+                View Certificate
+              </a>
+
+              <a
+                class="btn btn-small"
+                href="https://credential.net/b642f30f-f2b5-4200-afa8-69725c5032c2"
+                target="_blank"
+                rel="noopener"
+              >
+                Verify
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="certificate-card">
+
+          <a
             href="certificates/berkeley-half-marathon.png"
             target="_blank"
             rel="noopener"
