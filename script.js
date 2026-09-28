@@ -382,6 +382,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 View Certificate
               </a>
 
+              <a
+                class="btn btn-small"
+                href="https://verify.skilljar.com/c/iycqapq2zf2r"
+                target="_blank"
+                rel="noopener"
+              >
+                Verify
+              </a>
+
             </div>
 
           </div>
