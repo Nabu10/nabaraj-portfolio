@@ -282,6 +282,184 @@ document.addEventListener("DOMContentLoaded", function () {
         <article class="certificate-card">
 
           <a
+            href="certificates/kodekloud-docker-training-beginner.png"
+            target="_blank"
+            rel="noopener"
+            aria-label="View KodeKloud Docker Training Course certificate"
+          >
+            <img
+              class="certificate-thumb"
+              src="certificates/kodekloud-docker-training-beginner.png"
+              alt="KodeKloud Docker Training Course for the Absolute Beginner certificate of completion for Nabaraj Kandel, September 29 2026"
+              loading="lazy"
+            >
+          </a>
+
+          <div class="certificate-content">
+
+            <div class="certificate-icon" aria-hidden="true">🐳</div>
+
+            <p class="certificate-type">
+              PROFESSIONAL LEARNING · 2026
+            </p>
+
+            <h3>Docker Training Course for the Absolute Beginner</h3>
+
+            <p>
+              Completed KodeKloud's Docker Training Course for the
+              Absolute Beginner on September 29, 2026 — Docker
+              fundamentals for containerized development and
+              deployment. Certificate ID
+              71a02fd9-0fc4-443b-a33d-2243b3456f36.
+            </p>
+
+            <div class="certificate-actions">
+
+              <a
+                class="btn btn-small"
+                href="certificates/kodekloud-docker-training-beginner.png"
+                target="_blank"
+                rel="noopener"
+              >
+                View Certificate
+              </a>
+
+              <a
+                class="btn btn-small btn-ghost"
+                href="https://learn.kodekloud.com/learn/certificate/71a02fd9-0fc4-443b-a33d-2243b3456f36"
+                target="_blank"
+                rel="noopener"
+              >
+                Verify
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="certificate-card">
+
+          <a
+            href="certificates/hackerrank-java-basic.png"
+            target="_blank"
+            rel="noopener"
+            aria-label="View HackerRank Java Basic certificate"
+          >
+            <img
+              class="certificate-thumb"
+              src="certificates/hackerrank-java-basic.png"
+              alt="HackerRank Java Basic skills certification for Nabaraj Kandel, September 28 2026"
+              loading="lazy"
+            >
+          </a>
+
+          <div class="certificate-content">
+
+            <div class="certificate-icon" aria-hidden="true">☕</div>
+
+            <p class="certificate-type">
+              PROFESSIONAL LEARNING · 2026
+            </p>
+
+            <h3>Java (Basic)</h3>
+
+            <p>
+              Passed the HackerRank Java (Basic) skills certification
+              test on September 28, 2026. Certificate ID BB5D2AFC6698.
+            </p>
+
+            <div class="certificate-actions">
+
+              <a
+                class="btn btn-small"
+                href="certificates/hackerrank-java-basic.png"
+                target="_blank"
+                rel="noopener"
+              >
+                View Certificate
+              </a>
+
+              <a
+                class="btn btn-small btn-ghost"
+                href="https://www.hackerrank.com/certificates/bb5d2afc6698"
+                target="_blank"
+                rel="noopener"
+              >
+                Verify
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="certificate-card">
+
+          <a
+            href="certificates/microsoft-cloud-infrastructure-trophy.png"
+            target="_blank"
+            rel="noopener"
+            aria-label="View Microsoft Learn cloud concepts trophy"
+          >
+            <img
+              class="certificate-thumb"
+              src="certificates/microsoft-cloud-infrastructure-trophy.png"
+              alt="Microsoft Learn trophy for Introduction to Cloud Infrastructure Describe cloud concepts earned by Nabaraj Kandel, September 28 2026"
+              loading="lazy"
+            >
+          </a>
+
+          <div class="certificate-content">
+
+            <div class="certificate-icon" aria-hidden="true">☁️</div>
+
+            <p class="certificate-type">
+              PROFESSIONAL LEARNING · 2026
+            </p>
+
+            <h3>Introduction to Cloud Infrastructure: Describe cloud concepts</h3>
+
+            <p>
+              Earned the Microsoft Learn trophy for Introduction to
+              Cloud Infrastructure: Describe cloud concepts on
+              September 28, 2026. Achievement ID EG7CZEEP.
+            </p>
+
+            <div class="certificate-actions">
+
+              <a
+                class="btn btn-small"
+                href="certificates/microsoft-cloud-infrastructure-trophy.png"
+                target="_blank"
+                rel="noopener"
+              >
+                View Certificate
+              </a>
+
+              <a
+                class="btn btn-small btn-ghost"
+                href="https://learn.microsoft.com/en-us/users/nabarajkandel-5034/achievements/EG7CZEEP"
+                target="_blank"
+                rel="noopener"
+              >
+                Verify
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="certificate-card">
+
+          <a
             href="certificates/databricks-generative-ai-fundamentals.png"
             target="_blank"
             rel="noopener"
