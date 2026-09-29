@@ -518,6 +518,65 @@ document.addEventListener("DOMContentLoaded", function () {
         <article class="certificate-card">
 
           <a
+            href="certificates/cognitiveclass-python-101-data-science.png"
+            target="_blank"
+            rel="noopener"
+            aria-label="View Cognitive Class Python 101 for Data Science certificate"
+          >
+            <img
+              class="certificate-thumb"
+              src="certificates/cognitiveclass-python-101-data-science.png"
+              alt="Cognitive Class certificate for Python 101 for Data Science earned by Nabaraj Kandel, September 28 2026"
+              loading="lazy"
+            >
+          </a>
+
+          <div class="certificate-content">
+
+            <div class="certificate-icon" aria-hidden="true">🐍</div>
+
+            <p class="certificate-type">
+              PROFESSIONAL LEARNING · 2026
+            </p>
+
+            <h3>Python 101 for Data Science</h3>
+
+            <p>
+              Completed Cognitive Class's Python 101 for Data Science
+              (PY0101EN, provided by IBM) with a passing grade on
+              September 28, 2026.
+            </p>
+
+            <div class="certificate-actions">
+
+              <a
+                class="btn btn-small"
+                href="certificates/cognitiveclass-python-101-data-science.png"
+                target="_blank"
+                rel="noopener"
+              >
+                View Certificate
+              </a>
+
+              <a
+                class="btn btn-small btn-ghost"
+                href="https://courses.cognitiveclass.ai/certificates/0dd2d83ea51a4ebaaadca326d6c00818"
+                target="_blank"
+                rel="noopener"
+              >
+                Verify
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="certificate-card">
+
+          <a
             href="certificates/databricks-generative-ai-fundamentals.png"
             target="_blank"
             rel="noopener"
