@@ -651,3 +651,12 @@ body{
   border-top: 1px solid var(--stroke);
   background: rgba(7,11,20,0.96);
 }
+
+/* Recommendations / testimonials */
+.rec-card{margin:0}
+.rec-card blockquote{margin:0 0 16px;font-size:14px;line-height:1.75;color:#c9d4e8;font-style:italic}
+.rec-card figcaption strong{display:block;font-size:14px;color:#eef4ff;margin-bottom:3px}
+.rec-card figcaption span{font-size:12px;color:#8291ad;line-height:1.5}
+.rec-more{margin-top:20px}
+.rec-more a{color:#9fc1ff;text-decoration:none;font-size:13px}
+.rec-more a:hover{text-decoration:underline}
