@@ -460,6 +460,64 @@ document.addEventListener("DOMContentLoaded", function () {
         <article class="certificate-card">
 
           <a
+            href="certificates/simplilearn-business-analytics-excel.png"
+            target="_blank"
+            rel="noopener"
+            aria-label="View Simplilearn Business Analytics with Excel certificate"
+          >
+            <img
+              class="certificate-thumb"
+              src="certificates/simplilearn-business-analytics-excel.png"
+              alt="Simplilearn Declaration of Completion for Business Analytics with Excel earned by Nabaraj Kandel, September 28 2026"
+              loading="lazy"
+            >
+          </a>
+
+          <div class="certificate-content">
+
+            <div class="certificate-icon" aria-hidden="true">📊</div>
+
+            <p class="certificate-type">
+              PROFESSIONAL LEARNING · 2026
+            </p>
+
+            <h3>Business Analytics with Excel</h3>
+
+            <p>
+              Completed Simplilearn's Business Analytics with Excel
+              course on September 28, 2026. Certificate code 10804280.
+            </p>
+
+            <div class="certificate-actions">
+
+              <a
+                class="btn btn-small"
+                href="certificates/simplilearn-business-analytics-excel.png"
+                target="_blank"
+                rel="noopener"
+              >
+                View Certificate
+              </a>
+
+              <a
+                class="btn btn-small btn-ghost"
+                href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiI1Njc0IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvMTA4MDQyODBfMTExNjY3NzNfMTc5MDYyODAxMDU2Ni5wbmciLCJ1c2VybmFtZSI6Ik5BQkFSQUogS0FOREVMIn0%3D"
+                target="_blank"
+                rel="noopener"
+              >
+                Verify
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="certificate-card">
+
+          <a
             href="certificates/databricks-generative-ai-fundamentals.png"
             target="_blank"
             rel="noopener"
