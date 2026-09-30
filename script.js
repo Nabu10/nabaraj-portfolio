@@ -1463,20 +1463,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 
-  if (!localStorage.getItem("chat_auto_opened")) {
-
-    setTimeout(
-      () => toggleChat(true),
-      1200
-    );
-
-    localStorage.setItem(
-      "chat_auto_opened",
-      "1"
-    );
-  }
-
-
   if (chatToggle) {
 
     chatToggle.onclick =
