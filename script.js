@@ -1090,7 +1090,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const githubContainer =
     document.getElementById("github-projects");
 
-  const GITHUB_USER = "nabarajkandel";
+  const GITHUB_USER = "Nabu10";
 
   if (githubContainer) {
 
