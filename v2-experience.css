@@ -62,5 +62,9 @@
 #certificates .certificate-note{margin-top:9px!important;color:#74839c!important;font-size:12px!important}
 #certificates .certificate-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}
 #certificates .certificate-actions .btn{font-size:12px;padding:9px 13px}
+#certificates .beyond-tech-head{margin:36px 0 6px}
+#certificates .beyond-tech-head h3{margin:0 0 6px;font-size:22px;color:#eef4ff}
+#certificates .beyond-tech .certificate-card{grid-template-columns:170px minmax(0,1fr);padding:20px 0;gap:20px}
+#certificates .beyond-tech .certificate-card h3{font-size:17px}
 
 @media(max-width:800px){#skills .skills-v2{grid-template-columns:1fr}#skills .skill-group:nth-child(odd){border-right:0}#experience .experience-v2{padding-left:25px}#experience .experience-dot{left:-25px}#experience .experience-company{font-size:22px}#projects .projects-v2{grid-template-columns:1fr;gap:26px}#projects .project-feature{padding:25px}#projects .project-feature h3{font-size:29px}#projects .project-side{padding:0;border-left:0;border-top:1px solid rgba(255,255,255,.1);padding-top:24px}#contact .contact-box{align-items:stretch}#contact .contact-box .btn{width:100%;justify-content:center}#certificates .certificate-card{grid-template-columns:1fr;gap:16px;padding:24px 0}#certificates .certificate-thumb{max-width:520px}#certificates .certificate-actions .btn{width:auto}}
