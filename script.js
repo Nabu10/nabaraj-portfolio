@@ -1458,7 +1458,7 @@ document.addEventListener("DOMContentLoaded", function () {
       next ? "flex" : "none";
 
     if (next && userInput) {
-      userInput.focus();
+      userInput.focus({ preventScroll: true });
     }
   }
 
