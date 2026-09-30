@@ -272,8 +272,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <h2>Things I've completed.</h2>
 
         <p class="muted">
-          A few professional learning milestones and personal achievements
-          that are meaningful to me.
+          Professional certifications and learning milestones.
         </p>
       </div>
 
@@ -695,62 +694,6 @@ document.addEventListener("DOMContentLoaded", function () {
         </article>
 
 
-        <article class="certificate-card">
-
-          <a
-            href="certificates/berkeley-half-marathon.png"
-            target="_blank"
-            rel="noopener"
-            aria-label="View Berkeley Half Marathon certificate"
-          >
-            <img
-              class="certificate-thumb"
-              src="certificates/berkeley-half-marathon.png"
-              alt="Berkeley Half Marathon finisher certificate for Nabaraj Kandel, November 17 2024"
-              loading="lazy"
-            >
-          </a>
-
-          <div class="certificate-content">
-
-            <div class="certificate-icon" aria-hidden="true">🏃</div>
-
-            <p class="certificate-type">
-              PERSONAL ACHIEVEMENT · 2024
-            </p>
-
-            <h3>Berkeley Half Marathon</h3>
-
-            <p>
-              Completed the Berkeley Half Marathon on November 17, 2024
-              with a finish time of 3:10:25 and an average pace of
-              14:32 min/mi.
-            </p>
-
-            <div class="certificate-actions">
-
-              <a
-                class="btn btn-small"
-                href="certificates/berkeley-half-marathon.png"
-                target="_blank"
-                rel="noopener"
-              >
-                View Certificate
-              </a>
-
-              <a
-                class="btn btn-small"
-                href="https://www.athlinks.com/event/95041/results/Event/1093947/Course/2528352/Bib/3713"
-                target="_blank"
-                rel="noopener"
-              >
-                View Race Results
-              </a>
-
-            </div>
-          </div>
-
-        </article>
 
 
         <article class="certificate-card">
@@ -811,6 +754,78 @@ document.addEventListener("DOMContentLoaded", function () {
 
         </article>
 
+
+
+      </div>
+
+      <div class="beyond-tech-head">
+
+        <h3>Beyond tech.</h3>
+
+        <p class="muted">
+          Personal achievements outside of work.
+        </p>
+
+      </div>
+
+      <div class="certificates-v2 beyond-tech">
+
+        <article class="certificate-card">
+
+          <a
+            href="certificates/berkeley-half-marathon.png"
+            target="_blank"
+            rel="noopener"
+            aria-label="View Berkeley Half Marathon certificate"
+          >
+            <img
+              class="certificate-thumb"
+              src="certificates/berkeley-half-marathon.png"
+              alt="Berkeley Half Marathon finisher certificate for Nabaraj Kandel, November 17 2024"
+              loading="lazy"
+            >
+          </a>
+
+          <div class="certificate-content">
+
+            <div class="certificate-icon" aria-hidden="true">🏃</div>
+
+            <p class="certificate-type">
+              PERSONAL ACHIEVEMENT · 2024
+            </p>
+
+            <h3>Berkeley Half Marathon</h3>
+
+            <p>
+              Completed the Berkeley Half Marathon on November 17, 2024
+              with a finish time of 3:10:25 and an average pace of
+              14:32 min/mi.
+            </p>
+
+            <div class="certificate-actions">
+
+              <a
+                class="btn btn-small"
+                href="certificates/berkeley-half-marathon.png"
+                target="_blank"
+                rel="noopener"
+              >
+                View Certificate
+              </a>
+
+              <a
+                class="btn btn-small"
+                href="https://www.athlinks.com/event/95041/results/Event/1093947/Course/2528352/Bib/3713"
+                target="_blank"
+                rel="noopener"
+              >
+                View Race Results
+              </a>
+
+            </div>
+          </div>
+
+        </article>
 
         <article class="certificate-card">
 
