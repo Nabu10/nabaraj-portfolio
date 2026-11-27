@@ -107,38 +107,42 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="experience-top">
             <div>
               <h3 class="experience-company">Wells Fargo</h3>
-              <p class="experience-role">Senior Software Developer</p>
+              <p class="experience-role">Senior Software Engineer</p>
             </div>
 
-            <p class="experience-date">Jul 2025 – Present</p>
+            <p class="experience-date">Jul 2025 – Nov 2026</p>
           </div>
 
           <ul>
             <li>
-              Worked on API proxy migration, including OAuth 2.0 scope
-              validation and OpenAPI 3.0 specifications.
+              Senior Software Engineer (contract) on an enterprise
+              customer-risk platform. Owned an Actimize plugin service
+              for risk rating, building Java/Spring Boot microservices
+              and React features for entity risk workflows across
+              150M+ entities.
             </li>
 
             <li>
-              Supported SIT and UAT validation using Postman, Splunk,
-              and Apigee Trace to troubleshoot API behavior.
+              Worked with daily batch and real-time APIs, Kafka
+              publishing flows over 600 KB/sec, and SQL/data access.
             </li>
 
             <li>
-              Created functional solution documentation covering routing,
-              OAuth, and Kafka integration requirements.
+              Shipped production releases multiple times a month using
+              Harness, Liquibase, and Autosys; maintained 80%+ code
+              coverage.
             </li>
 
             <li>
-              Contributed to PCF-to-OpenShift migration and Autosys
-              batch-job workflows.
+              Used Claude Code in day-to-day development for
+              implementation, debugging, tests, and code-review support.
             </li>
           </ul>
 
           <p class="experience-stack">
             <strong>Stack:</strong>
-            Java · Spring Boot · APIs · OAuth 2.0 · Kafka · OpenAPI ·
-            Apigee · OpenShift · Autosys
+            Java · Spring Boot · React · Kafka · SQL · Harness ·
+            Liquibase · Autosys · Claude Code
           </p>
         </article>
 
